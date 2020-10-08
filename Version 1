@@ -1,0 +1,73 @@
+import random
+import time
+
+A1 = "As I see it, yes."
+A2 = "Ask again later."
+A3 = "Better not tell you now."
+A4 = "Cannot predict now."
+A5 = "Concentrate and ask again."
+A6 = "Don’t count on it."
+A7 = "It is certain."
+A8 = "It is decidedly so."
+A9 = "Most likely."
+A10 = "My reply is no."
+A11 = "My sources say no."
+A12 = "Outlook not so good."
+A13 = "Outlook good."
+A14 = "Reply hazy, try again."
+A15 = "Signs point to yes."
+A16 = "Very doubtful."
+A17 = "Without a doubt."
+A18 = "Yes."
+A19 = "Yes – definitely."
+A20 = "You may rely on it."
+
+print("What would you like to ask the Magic 8 Ball: ")
+question = input()
+
+choice = random.randint(1,20)
+
+if choice == 1:
+	answer = A1
+elif choice == 2:
+	answer = A2
+elif choice == 3:
+	answer = A3
+elif choice == 4:
+	answer = A4
+elif choice == 5:
+	answer = A5
+elif choice == 6:
+	answer = A6
+elif choice == 7:
+	answer = A7
+elif choice == 8:
+	answer = A8
+elif choice == 9:
+	answer = A9
+elif choice == 10:
+	answer = A10
+elif choice == 11:
+	answer = A11
+elif choice == 12:
+	answer = A12
+elif choice == 13:
+	answer = A14
+elif choice == 14:
+	answer = A14
+elif choice == 15:
+	answer = A15
+elif choice == 16:
+	answer = A16
+elif choice == 17:
+	answer = A17
+elif choice == 18:
+	answer = A18
+elif choice == 19:
+	answer = A19
+else:
+	answer = A20
+
+print("******The Magic 8 Ball is Working********")
+time.sleep(5)
+print(f"Magic 8 Ball: {answer}")
